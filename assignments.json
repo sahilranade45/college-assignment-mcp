@@ -1,0 +1,14 @@
+[
+  {
+    "subject": "Machine Learning",
+    "assignment": "Assignment 7",
+    "deadline": "2026-10-03",
+    "status": "Pending"
+  },
+  {
+    "subject": "Distributed Systems",
+    "assignment": "Assignment 2",
+    "deadline": "2026-09-30",
+    "status": "Completed"
+  }
+]
