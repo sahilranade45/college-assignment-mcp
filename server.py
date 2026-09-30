@@ -1,19 +1,14 @@
 import json
 from mcp.server import MCPServer
 
-# Create the MCP server
 mcp = MCPServer("college-assignment-assistant")
 
 
-# Load assignment data from JSON file
 def load_assignments():
     with open("assignments.json", "r") as f:
         return json.load(f)
 
 
-# --------------------------------------------------
-# 1. TOOL
-# --------------------------------------------------
 
 @mcp.tool()
 def get_assignment_status(assignment: str) -> str:
@@ -33,9 +28,6 @@ def get_assignment_status(assignment: str) -> str:
     return f"Assignment '{assignment}' was not found."
 
 
-# --------------------------------------------------
-# 2. RESOURCE
-# --------------------------------------------------
 
 @mcp.resource("college://assignments")
 def get_all_assignments() -> str:
@@ -46,9 +38,6 @@ def get_all_assignments() -> str:
     return json.dumps(assignments, indent=2)
 
 
-# --------------------------------------------------
-# 3. PROMPT
-# --------------------------------------------------
 
 @mcp.prompt()
 def plan_assignment(assignment: str) -> str:
@@ -62,6 +51,6 @@ def plan_assignment(assignment: str) -> str:
     )
 
 
-# Start the MCP server
+
 if __name__ == "__main__":
     mcp.run()
