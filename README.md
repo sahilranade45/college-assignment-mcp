@@ -45,3 +45,23 @@ A prompt is useful when a user wants to intentionally select a predefined instru
 The Prompt was selected because assignment planning is a repeatable task where a predefined instruction can be reused whenever required.
 
 
+## System Design
+
+```text
+                    MCP Client
+                  / MCP Inspector
+                         |
+                         | MCP
+                         ↓
+          College Assignment MCP Server
+                         |
+          +--------------+--------------+
+          |              |              |
+          ↓              ↓              ↓
+        TOOL          RESOURCE         PROMPT
+          |              |              |
+ get_assignment_   college://      plan_assignment()
+     status()       assignments
+          |              |
+          ↓              ↓
+          +-------- assignments.json
