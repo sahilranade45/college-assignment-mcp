@@ -65,3 +65,15 @@ The Prompt was selected because assignment planning is a repeatable task where a
           |              |
           ↓              ↓
           +-------- assignments.json
+
+
+
+## Project Structure
+
+college-assignment-mcp/
+│
+├── server.py              # MCP server
+├── assignments.json       # Assignment data
+├── README.md              # Project documentation
+├── pyproject.toml         # Project configuration
+├── uv.lock                # Dependencies
