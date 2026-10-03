@@ -456,7 +456,7 @@ Claude uses: `update_assignment()`
 ```text
 Create a step-by-step plan for completing Assignment 7.
 ```
-
+![](image-5.png)
 Claude can use: `plan_assignment()`
 
 ---
