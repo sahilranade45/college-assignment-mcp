@@ -27,7 +27,7 @@
     "subject": "Web Technology",
     "assignment": "Assignment 10",
     "deadline": "2026-10-10",
-    "status": "Pending"
+    "status": "Completed"
   },
   {
     "subject": "Web Technology",
@@ -39,6 +39,12 @@
     "subject": "Web Technology",
     "assignment": "Assignment 12",
     "deadline": "2026-10-10",
+    "status": "Pending"
+  },
+  {
+    "subject": "Machine Learning",
+    "assignment": "ML Assignment 8",
+    "deadline": "2026-10-15",
     "status": "Pending"
   }
 ]

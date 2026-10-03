@@ -11,6 +11,7 @@ The project demonstrates how the Model Context Protocol (MCP) can connect an AI 
 Managing multiple college assignments can become difficult when there are different subjects, deadlines, and completion statuses.
 
 The College Assignment Assistant MCP provides a simple solution by allowing users to interact with their assignment data through Claude.
+![](image.png)
 
 Instead of manually editing a JSON file, users can simply ask Claude to:
 
@@ -414,7 +415,7 @@ Once the MCP server is connected to Claude, assignments can be managed using nat
 ```text
 Add Machine Learning Assignment 8 with deadline October 15, 2026 and status Pending.
 ```
-
+![add](image-1.png)
 Claude uses: `add_assignment()`
 
 ### View All Assignments
@@ -422,7 +423,7 @@ Claude uses: `add_assignment()`
 ```text
 Give me all the assignments.
 ```
-
+![list](image-2.png)
 Claude uses: `list_assignments()`
 
 ### Check Assignment Status
@@ -430,7 +431,7 @@ Claude uses: `list_assignments()`
 ```text
 What is the status of Assignment 7?
 ```
-
+![status](image-3.png)
 Claude uses: `get_assignment_status()`
 
 ### Update Assignment Status
@@ -438,7 +439,7 @@ Claude uses: `get_assignment_status()`
 ```text
 Mark Assignment 7 as Completed.
 ```
-
+![update](image-4.png)
 Claude uses: `update_assignment()`
 
 ### Change Assignment Deadline
@@ -449,13 +450,6 @@ Change Assignment 7's deadline to October 18, 2026.
 
 Claude uses: `update_assignment()`
 
-### Delete an Assignment
-
-```text
-Delete Assignment 7.
-```
-
-Claude uses: `delete_assignment()`
 
 ### Create an Assignment Plan
 
